@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F42ED04F238F5B4E001DC6BF /* Wlink WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F42ED04E238F5B4E001DC6BF /* Wlink WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F42ED055238F5B4E001DC6BF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42ED053238F5B4E001DC6BF /* Interface.storyboard */; };
+		F42ED057238F5B4F001DC6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42ED056238F5B4F001DC6BF /* Assets.xcassets */; };
+		F42ED05E238F5B4F001DC6BF /* Wlink WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F42ED05D238F5B4F001DC6BF /* Wlink WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F42ED063238F5B4F001DC6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42ED062238F5B4F001DC6BF /* ContentView.swift */; };
+		F42ED065238F5B4F001DC6BF /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42ED064238F5B4F001DC6BF /* HostingController.swift */; };
+		F42ED067238F5B4F001DC6BF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42ED066238F5B4F001DC6BF /* ExtensionDelegate.swift */; };
+		F42ED069238F5B4F001DC6BF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42ED068238F5B4F001DC6BF /* NotificationController.swift */; };
+		F42ED06B238F5B4F001DC6BF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42ED06A238F5B4F001DC6BF /* NotificationView.swift */; };
+		F42ED06D238F5B50001DC6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42ED06C238F5B50001DC6BF /* Assets.xcassets */; };
+		F42ED070238F5B50001DC6BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42ED06F238F5B50001DC6BF /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F42ED050238F5B4E001DC6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42ED044238F5B4E001DC6BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42ED04D238F5B4E001DC6BF;
+			remoteInfo = "Wlink WatchKit App";
+		};
+		F42ED05F238F5B4F001DC6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42ED044238F5B4E001DC6BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42ED05C238F5B4F001DC6BF;
+			remoteInfo = "Wlink WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F42ED078238F5B50001DC6BF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F42ED05E238F5B4F001DC6BF /* Wlink WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42ED07C238F5B50001DC6BF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F42ED04F238F5B4E001DC6BF /* Wlink WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F42ED04A238F5B4E001DC6BF /* Wlink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wlink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42ED04E238F5B4E001DC6BF /* Wlink WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wlink WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42ED054238F5B4E001DC6BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F42ED056238F5B4F001DC6BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F42ED058238F5B4F001DC6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42ED05D238F5B4F001DC6BF /* Wlink WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wlink WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42ED062238F5B4F001DC6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F42ED064238F5B4F001DC6BF /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		F42ED066238F5B4F001DC6BF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F42ED068238F5B4F001DC6BF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F42ED06A238F5B4F001DC6BF /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F42ED06C238F5B50001DC6BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F42ED06F238F5B50001DC6BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F42ED071238F5B50001DC6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42ED072238F5B50001DC6BF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42ED05A238F5B4F001DC6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F42ED043238F5B4E001DC6BF = {
+			isa = PBXGroup;
+			children = (
+				F42ED052238F5B4E001DC6BF /* Wlink WatchKit App */,
+				F42ED061238F5B4F001DC6BF /* Wlink WatchKit Extension */,
+				F42ED04B238F5B4E001DC6BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F42ED04B238F5B4E001DC6BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42ED04A238F5B4E001DC6BF /* Wlink.app */,
+				F42ED04E238F5B4E001DC6BF /* Wlink WatchKit App.app */,
+				F42ED05D238F5B4F001DC6BF /* Wlink WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F42ED052238F5B4E001DC6BF /* Wlink WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F42ED053238F5B4E001DC6BF /* Interface.storyboard */,
+				F42ED056238F5B4F001DC6BF /* Assets.xcassets */,
+				F42ED058238F5B4F001DC6BF /* Info.plist */,
+			);
+			path = "Wlink WatchKit App";
+			sourceTree = "<group>";
+		};
+		F42ED061238F5B4F001DC6BF /* Wlink WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F42ED062238F5B4F001DC6BF /* ContentView.swift */,
+				F42ED064238F5B4F001DC6BF /* HostingController.swift */,
+				F42ED066238F5B4F001DC6BF /* ExtensionDelegate.swift */,
+				F42ED068238F5B4F001DC6BF /* NotificationController.swift */,
+				F42ED06A238F5B4F001DC6BF /* NotificationView.swift */,
+				F42ED06C238F5B50001DC6BF /* Assets.xcassets */,
+				F42ED071238F5B50001DC6BF /* Info.plist */,
+				F42ED072238F5B50001DC6BF /* PushNotificationPayload.apns */,
+				F42ED06E238F5B50001DC6BF /* Preview Content */,
+			);
+			path = "Wlink WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F42ED06E238F5B50001DC6BF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F42ED06F238F5B50001DC6BF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F42ED049238F5B4E001DC6BF /* Wlink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42ED07D238F5B50001DC6BF /* Build configuration list for PBXNativeTarget "Wlink" */;
+			buildPhases = (
+				F42ED048238F5B4E001DC6BF /* Resources */,
+				F42ED07C238F5B50001DC6BF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42ED051238F5B4E001DC6BF /* PBXTargetDependency */,
+			);
+			name = Wlink;
+			productName = Wlink;
+			productReference = F42ED04A238F5B4E001DC6BF /* Wlink.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F42ED04D238F5B4E001DC6BF /* Wlink WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42ED079238F5B50001DC6BF /* Build configuration list for PBXNativeTarget "Wlink WatchKit App" */;
+			buildPhases = (
+				F42ED04C238F5B4E001DC6BF /* Resources */,
+				F42ED078238F5B50001DC6BF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42ED060238F5B4F001DC6BF /* PBXTargetDependency */,
+			);
+			name = "Wlink WatchKit App";
+			productName = "Wlink WatchKit App";
+			productReference = F42ED04E238F5B4E001DC6BF /* Wlink WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F42ED05C238F5B4F001DC6BF /* Wlink WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42ED075238F5B50001DC6BF /* Build configuration list for PBXNativeTarget "Wlink WatchKit Extension" */;
+			buildPhases = (
+				F42ED059238F5B4F001DC6BF /* Sources */,
+				F42ED05A238F5B4F001DC6BF /* Frameworks */,
+				F42ED05B238F5B4F001DC6BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wlink WatchKit Extension";
+			productName = "Wlink WatchKit Extension";
+			productReference = F42ED05D238F5B4F001DC6BF /* Wlink WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F42ED044238F5B4E001DC6BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = bobcode;
+				TargetAttributes = {
+					F42ED049238F5B4E001DC6BF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F42ED04D238F5B4E001DC6BF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F42ED05C238F5B4F001DC6BF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F42ED047238F5B4E001DC6BF /* Build configuration list for PBXProject "Wlink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F42ED043238F5B4E001DC6BF;
+			productRefGroup = F42ED04B238F5B4E001DC6BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F42ED049238F5B4E001DC6BF /* Wlink */,
+				F42ED04D238F5B4E001DC6BF /* Wlink WatchKit App */,
+				F42ED05C238F5B4F001DC6BF /* Wlink WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42ED048238F5B4E001DC6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42ED04C238F5B4E001DC6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42ED057238F5B4F001DC6BF /* Assets.xcassets in Resources */,
+				F42ED055238F5B4E001DC6BF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42ED05B238F5B4F001DC6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42ED070238F5B50001DC6BF /* Preview Assets.xcassets in Resources */,
+				F42ED06D238F5B50001DC6BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42ED059238F5B4F001DC6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42ED065238F5B4F001DC6BF /* HostingController.swift in Sources */,
+				F42ED063238F5B4F001DC6BF /* ContentView.swift in Sources */,
+				F42ED069238F5B4F001DC6BF /* NotificationController.swift in Sources */,
+				F42ED067238F5B4F001DC6BF /* ExtensionDelegate.swift in Sources */,
+				F42ED06B238F5B4F001DC6BF /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F42ED051238F5B4E001DC6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42ED04D238F5B4E001DC6BF /* Wlink WatchKit App */;
+			targetProxy = F42ED050238F5B4E001DC6BF /* PBXContainerItemProxy */;
+		};
+		F42ED060238F5B4F001DC6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42ED05C238F5B4F001DC6BF /* Wlink WatchKit Extension */;
+			targetProxy = F42ED05F238F5B4F001DC6BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F42ED053238F5B4E001DC6BF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42ED054238F5B4E001DC6BF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F42ED073238F5B50001DC6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F42ED074238F5B50001DC6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F42ED076238F5B50001DC6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wlink WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 35B88KVTHE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Wlink WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechicken.run.Wlink.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F42ED077238F5B50001DC6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wlink WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 35B88KVTHE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Wlink WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechicken.run.Wlink.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F42ED07A238F5B50001DC6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35B88KVTHE;
+				IBSC_MODULE = Wlink_WatchKit_Extension;
+				INFOPLIST_FILE = "Wlink WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechicken.run.Wlink.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F42ED07B238F5B50001DC6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35B88KVTHE;
+				IBSC_MODULE = Wlink_WatchKit_Extension;
+				INFOPLIST_FILE = "Wlink WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechicken.run.Wlink.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F42ED07E238F5B50001DC6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35B88KVTHE;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechicken.run.Wlink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F42ED07F238F5B50001DC6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35B88KVTHE;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechicken.run.Wlink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F42ED047238F5B4E001DC6BF /* Build configuration list for PBXProject "Wlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42ED073238F5B50001DC6BF /* Debug */,
+				F42ED074238F5B50001DC6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42ED075238F5B50001DC6BF /* Build configuration list for PBXNativeTarget "Wlink WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42ED076238F5B50001DC6BF /* Debug */,
+				F42ED077238F5B50001DC6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42ED079238F5B50001DC6BF /* Build configuration list for PBXNativeTarget "Wlink WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42ED07A238F5B50001DC6BF /* Debug */,
+				F42ED07B238F5B50001DC6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42ED07D238F5B50001DC6BF /* Build configuration list for PBXNativeTarget "Wlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42ED07E238F5B50001DC6BF /* Debug */,
+				F42ED07F238F5B50001DC6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F42ED044238F5B4E001DC6BF /* Project object */;
+}
