@@ -7,11 +7,47 @@
 //
 
 import WatchKit
+import UserNotifications
+import SwiftUI
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    let mess = Mess()
 
     func applicationDidFinishLaunching() {
-        // Perform any final initialization of your application.
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound]) {(granted, error) in
+            if (granted){
+                WKExtension.shared().registerForRemoteNotifications()
+            } else { /* handle no access */}
+        }
+        
+    }
+    
+    func didReceiveRemoteNotification(_ userInfo: [AnyHashable : Any],
+                                      fetchCompletionHandler: @escaping (WKBackgroundFetchResult) -> Void){
+        let arr = "\(userInfo)".split(separator: "*")
+        mess.messTitle = String(arr[1])
+        fetchCompletionHandler(.newData)
+        
+    }
+    
+    func didRegisterForRemoteNotifications(withDeviceToken deviceToken: Data){
+        
+        let tokenParts = deviceToken.map { data -> String in
+            return String(format: "%02.2hhx", data)
+        }
+        let token = tokenParts.joined()
+        let temp = UserDefaults.standard
+        if temp.value(forKey: "NotificationID") == nil{
+            temp.setValue("\(token)", forKey: "NotificationID")
+        }
+        temp.synchronize()
+        print("token \(token)")
+    }
+    
+    func didFailToRegisterForRemoteNotificationsWithError(_ error: Error){
+         print("failed \(error)")
     }
 
     func applicationDidBecomeActive() {

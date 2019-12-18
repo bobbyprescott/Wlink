@@ -18,6 +18,9 @@
 		F42ED06B238F5B4F001DC6BF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42ED06A238F5B4F001DC6BF /* NotificationView.swift */; };
 		F42ED06D238F5B50001DC6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42ED06C238F5B50001DC6BF /* Assets.xcassets */; };
 		F42ED070238F5B50001DC6BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42ED06F238F5B50001DC6BF /* Preview Assets.xcassets */; };
+		F488688E2395B0CF00BD0D6E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488688D2395B0CF00BD0D6E /* APIRequest.swift */; };
+		F48EAD8A23A6E8D30029A14E /* Mess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EAD8923A6E8D30029A14E /* Mess.swift */; };
+		F48EAD8C23A811B30029A14E /* BobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EAD8B23A811B30029A14E /* BobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,10 @@
 		F42ED06F238F5B50001DC6BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F42ED071238F5B50001DC6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42ED072238F5B50001DC6BF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F488688D2395B0CF00BD0D6E /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		F48EAD8923A6E8D30029A14E /* Mess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mess.swift; sourceTree = "<group>"; };
+		F48EAD8B23A811B30029A14E /* BobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobView.swift; sourceTree = "<group>"; };
+		F4FBE11C238F5D2200BDA8BE /* Wlink WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wlink WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +130,9 @@
 		F42ED061238F5B4F001DC6BF /* Wlink WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F4FBE11C238F5D2200BDA8BE /* Wlink WatchKit Extension.entitlements */,
 				F42ED062238F5B4F001DC6BF /* ContentView.swift */,
+				F488688D2395B0CF00BD0D6E /* APIRequest.swift */,
 				F42ED064238F5B4F001DC6BF /* HostingController.swift */,
 				F42ED066238F5B4F001DC6BF /* ExtensionDelegate.swift */,
 				F42ED068238F5B4F001DC6BF /* NotificationController.swift */,
@@ -132,6 +141,8 @@
 				F42ED071238F5B50001DC6BF /* Info.plist */,
 				F42ED072238F5B50001DC6BF /* PushNotificationPayload.apns */,
 				F42ED06E238F5B50001DC6BF /* Preview Content */,
+				F48EAD8923A6E8D30029A14E /* Mess.swift */,
+				F48EAD8B23A811B30029A14E /* BobView.swift */,
 			);
 			path = "Wlink WatchKit Extension";
 			sourceTree = "<group>";
@@ -276,7 +287,10 @@
 				F42ED063238F5B4F001DC6BF /* ContentView.swift in Sources */,
 				F42ED069238F5B4F001DC6BF /* NotificationController.swift in Sources */,
 				F42ED067238F5B4F001DC6BF /* ExtensionDelegate.swift in Sources */,
+				F488688E2395B0CF00BD0D6E /* APIRequest.swift in Sources */,
 				F42ED06B238F5B4F001DC6BF /* NotificationView.swift in Sources */,
+				F48EAD8C23A811B30029A14E /* BobView.swift in Sources */,
+				F48EAD8A23A6E8D30029A14E /* Mess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Wlink WatchKit Extension/Wlink WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Wlink WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 35B88KVTHE;
@@ -447,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Wlink WatchKit Extension/Wlink WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Wlink WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 35B88KVTHE;
