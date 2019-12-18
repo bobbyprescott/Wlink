@@ -3,7 +3,7 @@ push for watch only
 
 I put this together to demonstrate the new standalone iWatch only app in watchOS 6.
 
-I also demonstrated the send notification only to iWatch
+I also demonstrated the send notifications going only to the iWatch
 
 And I used the new SwiftUI framework.
 
