@@ -60,6 +60,8 @@ struct ContentView: View {
                                     let temp = UserDefaults.standard
                                     temp.setValue(self.firstname, forKey: "firstname")
                                     temp.setValue(self.lastname, forKey: "lastname")
+                                    self.temp.synchronize()
+                                    self.buttonText = "Remove Name"
                                         
                                 case .failure(let error):
                                     print("Error \(error)")
@@ -70,7 +72,6 @@ struct ContentView: View {
                             self.temp.removeObject(forKey: "firstname")
                             self.temp.removeObject(forKey: "lastname")
                             self.temp.removeObject(forKey: "NotificationID")
-                            self.temp.removeObject(forKey: "FavouriteArtist")
                             self.temp.synchronize()
                         }
                         
