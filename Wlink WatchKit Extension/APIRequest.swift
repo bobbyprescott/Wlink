@@ -1,3 +1,11 @@
+//
+//  this is where I do all my API calls
+//
+//  I use an internal network for ease in debugging
+//  because of push rtesting
+//
+//
+
 import Foundation
 
 enum APIError:Error {
@@ -5,6 +13,8 @@ enum APIError:Error {
     case decodingProblem
     case encodingProblem
 }
+
+
 
 struct APIRequest {
     let resourceURL: URL

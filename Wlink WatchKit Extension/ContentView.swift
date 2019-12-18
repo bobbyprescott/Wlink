@@ -1,9 +1,9 @@
 //
-//  ContentView.swift
-//  Wlink WatchKit Extension
+//  Using SwiftUI so the data binding is interesting
+//  I used an @EnvironmentObject
 //
-//  Created by robert prescott on 11/27/19.
-//  Copyright © 2019 bobcode. All rights reserved.
+//
+//
 //
 
 import WatchKit

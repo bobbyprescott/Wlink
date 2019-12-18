@@ -1,9 +1,9 @@
 //
-//  ExtensionDelegate.swift
-//  Wlink WatchKit Extension
 //
-//  Created by robert prescott on 11/27/19.
-//  Copyright © 2019 bobcode. All rights reserved.
+//  I've used notifications a lot but first time setting up new
+//  watchos 6 stand alone notifications
+//
+//
 //
 
 import WatchKit
@@ -26,6 +26,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     
     func didReceiveRemoteNotification(_ userInfo: [AnyHashable : Any],
                                       fetchCompletionHandler: @escaping (WKBackgroundFetchResult) -> Void){
+        // this is where the notification lands
+        // the split code was lazy but worked for the demo
         let arr = "\(userInfo)".split(separator: "*")
         mess.messTitle = String(arr[1])
         fetchCompletionHandler(.newData)

@@ -1,9 +1,9 @@
 //
-//  HostingController.swift
-//  Wlink WatchKit Extension
 //
-//  Created by robert prescott on 11/27/19.
-//  Copyright © 2019 bobcode. All rights reserved.
+//
+// used @EnvironmentObject so needed to add to root view
+//
+//
 //
 
 import WatchKit
